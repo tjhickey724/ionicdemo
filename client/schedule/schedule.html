@@ -1,0 +1,22 @@
+<template name="schedule">
+    {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+  
+    {{#contentFor "headerTitle"}}
+      <h1 class="title">Brandeis Map</h1>
+    {{/contentFor}}
+  
+    {{#contentFor "headerButtonRight"}}
+      <button class="button button-clear" onclick="alert('TODO')">Edit</button>
+    {{/contentFor}}
+
+    {{#ionView}}
+      {{#ionContent}}
+	
+	<img src="images/schedule1.jpg" width="100%" alt="week 1 schedule">
+	<hr/>
+	<img src="images/schedule2.jpg" width="100%" alt="week 2 schedule">
+  	{{/ionContent}}
+    {{/ionView}}
+</template>

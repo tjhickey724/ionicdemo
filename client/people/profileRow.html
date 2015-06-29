@@ -1,0 +1,16 @@
+<template name="profileRow">
+	{{#ionItem  buttonRight=true avatar=true}}
+<img src="{{photo}}" width="100" class="profile-photo">
+<b>Email: {{email}}</b><br/>
+<b>UserName: {{profile.userName}}</b><br/>
+<b>Name: {{profile.firstName}} {{profile.lastName}}</b> <br/>
+<b>Bio:</b>
+<p>
+		{{profile.bio}}
+</p>
+<a href="{{pathFor 'profile'}}">Go!<img src="{{photo}}" width="100" class="profile-photo"></a>
+
+
+	
+{{/ionItem}}
+</template>

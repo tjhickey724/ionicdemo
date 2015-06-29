@@ -1,0 +1,43 @@
+<template name="photos">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Brandeis App Design</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionSlideBox}}
+        {{#ionSlide class="light-bg"}}
+		<img src="images/mentoring.JPG" width="100%">
+		<h1>Build Web and Mobile Apps!</h1>
+		<p> BMAD combines app design coursework with field trips and social activities to create an exciting and transformative summer experience. You'll have the chance to meet professional app developers and learn which part of the industry might be right for you!</p>
+		
+        {{/ionSlide}}
+        {{#ionSlide class="dark-bg"}}
+		<h1>Express your Creativity!</h1>
+		<p> We’ll give you the tools to design a variety of apps, including social media, lifestyle, entertainment, productivity, educational, and apps straight from your imagination that can be shared with family, friends, and fans the world over!</p>
+		<img src="images/talking.JPG" width="100%">
+        {{/ionSlide}}
+        {{#ionSlide class="positive-bg"}}
+		  	<h1>Build exciting new apps with new friends</h1>
+		  	<p>
+		  		<ul><li>
+		  Design your own mobile application
+		  </li><li>
+		  Learn about the industry from Boston-area app developers and programmers
+		  </li><li>
+		  Meet other teens from across the country who share your passion
+		  </li></ul>
+		  	</p>
+	
+		  	<img src="images/farber.jpg" width="100%">
+        {{/ionSlide}}
+      {{/ionSlideBox}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
+	
+	

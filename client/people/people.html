@@ -1,0 +1,22 @@
+<template name="people">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">App Designers!!</h1>
+  {{/contentFor}}
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" onclick="alert('TODO')">Edit</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+				{{#each profiles}}
+					{{> profileRow}}
+				{{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
+	

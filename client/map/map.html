@@ -1,0 +1,21 @@
+<template name="map">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Brandeis Map</h1>
+  {{/contentFor}}
+  
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" onclick="alert('TODO')">Edit</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+	<img src="images/brandeisMap.png" width="100%" alt="map of Brandeis University">
+	
+	{{/ionContent}}
+  {{/ionView}}
+</template>

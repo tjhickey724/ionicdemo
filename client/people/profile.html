@@ -1,0 +1,39 @@
+<template name="profile">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="people"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Profile</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+   　　　　<h2>{{profile.firstName}} {{profile.lastName}} -- {{profile.userName}}
+			{{#if ownPost}}
+				<a href="{{pathFor 'profileEdit'}}"> EDIT </a>
+			{{/if}}
+		</h2>
+		<div class="row">
+			<div class="col-md-6">
+				Photo<hr/><img src="{{photo}}?s=400" alt="photo of {{profile.firstName}} {{profile.lastName}}" class="align-left"><hr/>
+			</div>
+			<div class="col-md-6">
+				<p>BIO: {{profile.bio}}</p>
+			</div>
+		</div>
+      </div>
+    {{/ionContent}}
+
+    {{#ionFooterBar class="bar-dark"}}
+      <h1 class="title">Footer</h1>
+    {{/ionFooterBar}}
+  {{/ionView}}
+
+</template>
+
+
+
+
+
